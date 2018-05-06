@@ -1,4 +1,4 @@
-[![donate button](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat)](htt    ps://github.com/abzico/donate)
+[![donate button](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat)](https://github.com/abzico/donate)
 
 # wepayCertVerify
 
@@ -10,7 +10,7 @@ From [offical anouncement](https://pay.weixin.qq.com/index.php/public/cms/conten
 
 Basically what we need to do is
 
-1. Verify whether we do need a further actions to install actual root CA certificates from Wechat Payment or not, if not which means it **passed** the verification, then we have no need to do anything further.
+1. Verify whether we do need a further actions to install actual root CA certificates from Wechat Payment or not, if not which means it **passed** the verification, then we have no need to do anything further. This repo follows guideline as seen [here](https://pay.weixin.qq.com/wiki/doc/api/micropay.php?chapter=23_4) for its verification.
 2. If not, then we just need to grab root CA certificates as found [here](https://pay.weixin.qq.com/wiki/doc/api/micropay.php?chapter=23_4) then install them onto your server.
 
 So this repo has code to help you verify for 1. If you need to perform 2, then continue reading to find instruction on how to install certificate on your server in this README file.
