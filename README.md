@@ -23,7 +23,7 @@ So this repo has code to help you verify for 1. If you need to perform 2, then c
 
 If you see `success` as seen in following similar result, you're good to go and no need to perform 2.
 
-```
+```xml
 <xml>
     <return_code><![CDATA[SUCCESS]]></return_code>
     <return_msg><![CDATA[ok]]></return_msg>
