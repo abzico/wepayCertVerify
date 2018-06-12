@@ -17,7 +17,7 @@ So this repo has code to help you verify for 1. If you need to perform 2, then c
 
 # How to Verify?
 
-* Clone the repo
+* Clone the repo to your computer
 * Configure your merchant platform key, and merchant number in `apitest.js`. See its corresponding comments inside source file.
 * Execute `node apitest.js`
 
@@ -32,6 +32,10 @@ If you see `success` as seen in following similar result, you're good to go and 
 ```
 
 in which value inside `sandbox_signkey` is 32 hex-char that you will be using in other payment API.
+
+# Beware!!
+
+* `apitest.js` file is meant to be executed on your system as a testing script. You modify its source code for `KEY` and `MCH_ID` but you should **never** commit such changes back to your or upstream repository. If you found some enchancements that you want to modify, please make sure to not commit your `KEY` and `MCH_ID` back to repo.
 
 # How to List & Install Root CA Certificates On Your Server?
 
